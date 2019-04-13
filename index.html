@@ -2,6 +2,17 @@
 <html>
   <title>Test</title>
   <body>
-    <iframe src="https://assets.veervr.tv/@veervr/blink/v0.10.1/embed/index.html?ixId=ZLL7MvCwzTcyoD27dDA5EkNC4YE&lang=en&utm_medium=embed" frameborder="0" allowfullscreen="true" width="560" height="315"></iframe>
+    <script src="//naver.github.io/egjs-view360/release/latest/dist/PanoViewer/view360.panoviewer.pkgd.min.js"></script>
+    
+    <script>
+      var container = document.getElementById("myPanoViewer");
+      var panoViewer = new eg.view360.PanoViewer(container, {
+          image: "https://naver.github.io/egjs-view360/examples/panoviewer/controls/equi-car-inside.jpg",
+          projectionType: "equirectangular"
+      });
+    </script>
+    
+    <div id="myPanoViewer"></div>
+    <!--<iframe src="https://assets.veervr.tv/@veervr/blink/v0.10.1/embed/index.html?ixId=ZLL7MvCwzTcyoD27dDA5EkNC4YE&lang=en&utm_medium=embed" frameborder="0" allowfullscreen="true" width="560" height="315"></iframe>-->
   </body>
 </html>
