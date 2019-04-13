@@ -5,11 +5,15 @@
     <script src="//naver.github.io/egjs-view360/release/latest/dist/PanoViewer/view360.panoviewer.pkgd.min.js"></script>
     
     <script>
-      var container = document.getElementById("myPanoViewer");
-      var panoViewer = new eg.view360.PanoViewer(container, {
-          image: "https://naver.github.io/egjs-view360/examples/panoviewer/controls/equi-car-inside.jpg",
+      var PanoViewer = eg.view360.PanoViewer;
+      const panoViewer = new PanoViewer(
+        document.getElementById("myPanoViewer"),
+        {
+          image: "https://naver.github.io/egjs-view360/examples/panoviewer/controls/equi-car-inside.jpg"
           projectionType: "equirectangular"
-      });
+        }
+      );        
+      
     </script>
     
     <div id="myPanoViewer"></div>
