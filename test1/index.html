@@ -183,11 +183,16 @@
 }
 
 .hotspot.link:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  border-width: 15px 15px 0 15px;
-  border-color: rgba(0,0,0,0.4) transparent transparent transparent;
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    border-width: 15px 15px 0 15px;
+    border-color: rgba(0,0,0,0.4) transparent transparent transparent;
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    transform: translateX(-50%);
 }
 
 .viewer[data-page="1"] .hotspot[data-page="1"] {
@@ -241,10 +246,10 @@
     <div class="hotspot link" data-page="1" data-anchor-index="3" data-yaw="180" data-pitch="-8">
         Cyclist crossing
     </div>
-   <div class="hotspot link" data-page="1" data-anchor-index="3" data-yaw="150" data-pitch="-8">
+   <div class="hotspot link" data-page="1" data-anchor-index="3" data-yaw="150" data-pitch="-6">
         Bridge Renovation
     </div>
-  <div class="hotspot link" data-page="1" data-anchor-index="3" data-yaw="140" data-pitch="-14">
+  <div class="hotspot link" data-page="1" data-anchor-index="3" data-yaw="144" data-pitch="-14">
         Park Lights
     </div>
 </div>
