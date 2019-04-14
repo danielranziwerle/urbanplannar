@@ -342,7 +342,7 @@ function load(target, page) {
 
   setTimeout(function () {
     panoviewer.setAttribute("data-page", currentPage);
-    viewer.setImage("city-view.jpg", {
+    viewer.setImage("https://danielranziwerle.github.io/urbanplannar/test1/city-view.jpg", {
       projectionType: eg.view360.PanoViewer.PROJECTION_TYPE.CUBEMAP,
       cubemapConfig: {
         tileConfig: { flipHorizontal: true, rotation: 0 } } });
@@ -351,7 +351,7 @@ function load(target, page) {
   }, 500);
 }
 var viewer = new eg.view360.PanoViewer(container, {
-  image: "city-view.jpg",
+  image: "https://danielranziwerle.github.io/urbanplannar/test1/city-view.jpg",
   useZoom: false,
   projectionType: eg.view360.PanoViewer.PROJECTION_TYPE.EQUIRECTANGULAR,
   cubemapConfig: {
